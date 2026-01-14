@@ -1,1 +1,67 @@
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.carrinho {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.loja {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.produto {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.finalizar {
+  background-color: #ff9800;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+li {
+  background-color: white;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+#mensagem {
+  font-size: 18px;
+  margin-top: 15px;
+  color: green;
+  }
