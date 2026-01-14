@@ -10,17 +10,27 @@ function adicionarCarrinho(nome, preco) {
   atualizarTela("✅ Produto adicionado ao carrinho!");
 }
 
-function finalizarCompra() {
+function finalizarCompraWhatsApp() {
   if (carrinho.length === 0) {
     atualizarTela("⚠️ Carrinho vazio!");
     return;
   }
 
-  itensCarrinho = 0;
-  totalCompra = 0;
-  carrinho = [];
+  let mensagem = "🛍️ *Pedido da Loja*\n\n";
 
-  atualizarTela("🎉 Compra finalizada com sucesso!");
+  for (let item of carrinho) {
+    mensagem += `• ${item.nome} - R$ ${item.preco.toFixed(2)}\n`;
+  }
+
+  mensagem += `\n💰 *Total:* R$ ${totalCompra.toFixed(2)}\n\n`;
+  mensagem += "📲 Forma de pagamento: PIX";
+
+  // 👉 COLOQUE SEU NÚMERO AQUI (com DDI +55)
+  let telefone = "5599999999999";
+
+  let url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+
+  window.open(url, "_blank");
 }
 
 function atualizarTela(mensagem) {
