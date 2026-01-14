@@ -28,7 +28,7 @@ function finalizarCompraWhatsApp() {
   // 👉 COLOQUE SEU NÚMERO AQUI (com DDI +55)
   let telefone = "5575999807298";
 
-  let url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+  let url = `https://wa.me/qr/DAR7EAWH327TE1{5575999807298}?text=${encodeURIComponent(mensagem)}`;
 
   window.open(url, "_blank");
 }
