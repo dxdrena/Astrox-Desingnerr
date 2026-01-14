@@ -26,7 +26,7 @@ function finalizarCompraWhatsApp() {
   mensagem += "📲 Forma de pagamento: PIX";
 
   // 👉 COLOQUE SEU NÚMERO AQUI (com DDI +55)
-  let telefone = "5599999999999";
+  let telefone = "5575999807298";
 
   let url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
 
