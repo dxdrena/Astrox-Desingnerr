@@ -1,14 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Minha Loja</title>
+  <title>Minha Loja Online</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- SEU SITE AQUI -->
   <h1>🛍️ Minha Loja Online</h1>
+
+  <div class="carrinho">
+    🛒 Carrinho: <span id="contador">0</span> item(s) |
+    Total: R$ <span id="total">0.00</span>
+  </div>
+
+  <div class="loja">
+    <div class="produto">
+      <h2>Camiseta JavaScript</h2>
+      <p>Preço: R$ 49,90</p>
+      <button onclick="adicionarCarrinho('Camiseta JavaScript', 49.90)">Adicionar</button>
+    </div>
+
+    <div class="produto">
+      <h2>Caneca Programador</h2>
+      <p>Preço: R$ 29,90</p>
+      <button onclick="adicionarCarrinho('Caneca Programador', 29.90)">Adicionar</button>
+    </div>
+
+    <div class="produto">
+      <h2>Curso Básico JS</h2>
+      <p>Preço: R$ 99,90</p>
+      <button onclick="adicionarCarrinho('Curso Básico JS', 99.90)">Adicionar</button>
+    </div>
+  </div>
+
+  <h2>🧾 Itens no Carrinho</h2>
+  <ul id="listaCarrinho"></ul>
+
+  <button class="finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+
+  <p id="mensagem"></p>
 
   <script src="script.js"></script>
 </body>
